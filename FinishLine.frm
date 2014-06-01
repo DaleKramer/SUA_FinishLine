@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin VB.Form FinishLine 
    Caption         =   "Finish Line by Dale Kramer v1.02"
-   ClientHeight    =   7296
-   ClientLeft      =   48
-   ClientTop       =   336
-   ClientWidth     =   4524
+   ClientHeight    =   7305
+   ClientLeft      =   45
+   ClientTop       =   330
+   ClientWidth     =   4530
    LinkTopic       =   "Form1"
-   ScaleHeight     =   7296
-   ScaleWidth      =   4524
+   ScaleHeight     =   7305
+   ScaleWidth      =   4530
    StartUpPosition =   3  'Windows Default
    Begin VB.OptionButton Kpoint 
       Caption         =   "Center Known"
@@ -84,7 +84,7 @@ Begin VB.Form FinishLine
       Caption         =   "Calculate"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -200,10 +200,10 @@ Begin VB.Form FinishLine
       Alignment       =   1  'Right Justify
       Caption         =   "Nearest 'Second' Endpoint 1 Latitude"
       Height          =   300
-      Left            =   528
+      Left            =   1545
       TabIndex        =   17
-      Top             =   2928
-      Width           =   2700
+      Top             =   2925
+      Width           =   1680
    End
    Begin VB.Label Label8 
       Alignment       =   1  'Right Justify
