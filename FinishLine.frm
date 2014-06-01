@@ -1,20 +1,29 @@
 VERSION 5.00
 Begin VB.Form FinishLine 
    Caption         =   "Finish Line by Dale Kramer v1.03"
-   ClientHeight    =   9570
+   ClientHeight    =   10965
    ClientLeft      =   45
    ClientTop       =   330
-   ClientWidth     =   5790
+   ClientWidth     =   6495
    LinkTopic       =   "Form1"
-   ScaleHeight     =   9570
-   ScaleWidth      =   5790
+   ScaleHeight     =   10965
+   ScaleWidth      =   6495
    StartUpPosition =   3  'Windows Default
+   Begin VB.TextBox NSlon1 
+      Alignment       =   2  'Center
+      Height          =   360
+      Left            =   4050
+      Locked          =   -1  'True
+      TabIndex        =   31
+      Top             =   5618
+      Width           =   1215
+   End
    Begin VB.OptionButton Kpoint 
       Caption         =   "Center Known"
       Height          =   300
       Index           =   1
       Left            =   3900
-      TabIndex        =   27
+      TabIndex        =   25
       Top             =   345
       Width           =   1725
    End
@@ -23,7 +32,7 @@ Begin VB.Form FinishLine
       Height          =   300
       Index           =   0
       Left            =   2100
-      TabIndex        =   26
+      TabIndex        =   24
       Top             =   345
       Width           =   1785
    End
@@ -40,43 +49,34 @@ Begin VB.Form FinishLine
       EndProperty
       Height          =   444
       Left            =   2160
-      TabIndex        =   25
-      Top             =   8940
+      TabIndex        =   23
+      Top             =   10260
       Width           =   2844
    End
    Begin VB.TextBox NSlon2 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
-      TabIndex        =   24
-      Top             =   7485
+      TabIndex        =   22
+      Top             =   8170
       Width           =   1215
    End
    Begin VB.TextBox NSlat2 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
-      TabIndex        =   23
-      Top             =   7050
-      Width           =   1215
-   End
-   Begin VB.TextBox NSlon1 
-      Alignment       =   2  'Center
-      Height          =   300
-      Left            =   4050
-      Locked          =   -1  'True
-      TabIndex        =   20
-      Top             =   5475
+      TabIndex        =   21
+      Top             =   7532
       Width           =   1215
    End
    Begin VB.TextBox NSlat1 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
-      TabIndex        =   19
+      TabIndex        =   18
       Top             =   5040
       Width           =   1215
    End
@@ -99,38 +99,38 @@ Begin VB.Form FinishLine
    End
    Begin VB.TextBox Elon2 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
       TabIndex        =   15
-      Top             =   8490
+      Top             =   9450
       Width           =   1215
    End
    Begin VB.TextBox Elat2 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
       TabIndex        =   14
-      Top             =   8070
+      Top             =   8808
       Width           =   1215
    End
    Begin VB.TextBox CenterLon 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
       TabIndex        =   13
-      Top             =   6480
+      Top             =   6894
       Width           =   1215
    End
    Begin VB.TextBox CenterLat 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       Locked          =   -1  'True
       TabIndex        =   12
-      Top             =   6045
+      Top             =   6256
       Width           =   1215
    End
    Begin VB.TextBox Lwidth 
@@ -144,7 +144,7 @@ Begin VB.Form FinishLine
    End
    Begin VB.TextBox FTdir 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       TabIndex        =   4
       Text            =   "180"
@@ -153,7 +153,7 @@ Begin VB.Form FinishLine
    End
    Begin VB.TextBox Elon1 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       TabIndex        =   2
       Text            =   "083:46.510W"
@@ -162,15 +162,23 @@ Begin VB.Form FinishLine
    End
    Begin VB.TextBox Elat1 
       Alignment       =   2  'Center
-      Height          =   300
+      Height          =   360
       Left            =   4050
       TabIndex        =   0
       Text            =   "31:59.400N"
       Top             =   2550
       Width           =   1215
    End
+   Begin VB.Label Label10 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Nearest 'Second' Endpoint 1 Longitude"
+      Height          =   300
+      Left            =   345
+      TabIndex        =   32
+      Top             =   5648
+      Width           =   3660
+   End
    Begin VB.Label Label16 
-      Caption         =   $"FinishLine.frx":0000
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   9.75
@@ -183,7 +191,7 @@ Begin VB.Form FinishLine
       ForeColor       =   &H000000FF&
       Height          =   1035
       Left            =   540
-      TabIndex        =   32
+      TabIndex        =   30
       Top             =   1260
       Width           =   4695
    End
@@ -201,8 +209,8 @@ Begin VB.Form FinishLine
       ForeColor       =   &H000000FF&
       Height          =   255
       Left            =   360
-      TabIndex        =   31
-      Top             =   9000
+      TabIndex        =   29
+      Top             =   10320
       Width           =   1755
    End
    Begin VB.Label Label14 
@@ -219,7 +227,7 @@ Begin VB.Form FinishLine
       ForeColor       =   &H000000FF&
       Height          =   255
       Left            =   420
-      TabIndex        =   30
+      TabIndex        =   28
       Top             =   4560
       Width           =   2115
    End
@@ -237,7 +245,7 @@ Begin VB.Form FinishLine
       ForeColor       =   &H000000FF&
       Height          =   255
       Left            =   360
-      TabIndex        =   29
+      TabIndex        =   27
       Top             =   840
       Width           =   5355
    End
@@ -255,7 +263,7 @@ Begin VB.Form FinishLine
       ForeColor       =   &H000000FF&
       Height          =   255
       Left            =   360
-      TabIndex        =   28
+      TabIndex        =   26
       Top             =   375
       Width           =   1635
    End
@@ -263,37 +271,28 @@ Begin VB.Form FinishLine
       Alignment       =   1  'Right Justify
       Caption         =   "Nearest 'Second' Endpoint 2 Longitude"
       Height          =   300
-      Left            =   285
-      TabIndex        =   22
-      Top             =   7530
-      Width           =   3720
+      Left            =   345
+      TabIndex        =   20
+      Top             =   8200
+      Width           =   3660
    End
    Begin VB.Label Label11 
       Alignment       =   1  'Right Justify
       Caption         =   "Nearest 'Second' Endpoint 2 Latitude"
       Height          =   300
-      Left            =   285
-      TabIndex        =   21
-      Top             =   7110
-      Width           =   3720
-   End
-   Begin VB.Label Label10 
-      Alignment       =   1  'Right Justify
-      Caption         =   "Nearest 'Second' Endpoint 1 Longitude"
-      Height          =   300
-      Left            =   285
-      TabIndex        =   18
-      Top             =   5520
-      Width           =   3720
+      Left            =   345
+      TabIndex        =   19
+      Top             =   7562
+      Width           =   3660
    End
    Begin VB.Label Label9 
       Alignment       =   1  'Right Justify
       Caption         =   "Nearest 'Second' Endpoint 1 Latitude"
       Height          =   300
-      Left            =   225
+      Left            =   345
       TabIndex        =   17
-      Top             =   5085
-      Width           =   3780
+      Top             =   5040
+      Width           =   3660
    End
    Begin VB.Label Label8 
       Alignment       =   1  'Right Justify
@@ -301,7 +300,7 @@ Begin VB.Form FinishLine
       Height          =   300
       Left            =   345
       TabIndex        =   11
-      Top             =   8550
+      Top             =   9450
       Width           =   3660
    End
    Begin VB.Label Label7 
@@ -310,7 +309,7 @@ Begin VB.Form FinishLine
       Height          =   300
       Left            =   345
       TabIndex        =   10
-      Top             =   8115
+      Top             =   8838
       Width           =   3660
    End
    Begin VB.Label Label6 
@@ -319,7 +318,7 @@ Begin VB.Form FinishLine
       Height          =   300
       Left            =   345
       TabIndex        =   9
-      Top             =   6525
+      Top             =   6924
       Width           =   3660
    End
    Begin VB.Label Label5 
@@ -328,44 +327,44 @@ Begin VB.Form FinishLine
       Height          =   300
       Left            =   345
       TabIndex        =   8
-      Top             =   6060
+      Top             =   6286
       Width           =   3660
    End
    Begin VB.Label Label4 
       Alignment       =   1  'Right Justify
       Caption         =   "Line Length (feet)"
       Height          =   300
-      Left            =   345
+      Left            =   105
       TabIndex        =   7
       Top             =   3990
-      Width           =   3660
+      Width           =   3900
    End
    Begin VB.Label Headlabel 
       Alignment       =   1  'Right Justify
       Caption         =   "Heading to other end of line (degrees True)"
       Height          =   300
-      Left            =   330
+      Left            =   105
       TabIndex        =   5
       Top             =   3555
-      Width           =   3675
+      Width           =   3900
    End
    Begin VB.Label Label2 
       Alignment       =   1  'Right Justify
       Caption         =   "Endpoint 1 of line Longitude (ddd:mm.sssW)"
       Height          =   300
-      Left            =   225
+      Left            =   105
       TabIndex        =   3
       Top             =   3075
-      Width           =   3735
+      Width           =   3900
    End
    Begin VB.Label Label1 
       Alignment       =   1  'Right Justify
       Caption         =   "Endpoint 1 of line Latitude (dd:mm.sssN)"
       Height          =   300
-      Left            =   210
+      Left            =   105
       TabIndex        =   1
       Top             =   2595
-      Width           =   3795
+      Width           =   3900
    End
 End
 Attribute VB_Name = "FinishLine"
