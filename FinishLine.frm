@@ -30,10 +30,10 @@ Begin VB.Form FinishLine
    Begin VB.CommandButton Export 
       Caption         =   "Export Airspace File"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Arial"
          Size            =   12
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -83,10 +83,10 @@ Begin VB.Form FinishLine
    Begin VB.CommandButton Calculate 
       Caption         =   "Calculate"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   13.5
+         Name            =   "Arial"
+         Size            =   14.25
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
@@ -221,7 +221,7 @@ Begin VB.Form FinishLine
       Left            =   420
       TabIndex        =   30
       Top             =   4560
-      Width           =   2235
+      Width           =   2115
    End
    Begin VB.Label Label13 
       Caption         =   "2. Modify the 4 input values to your liking."
@@ -290,10 +290,10 @@ Begin VB.Form FinishLine
       Alignment       =   1  'Right Justify
       Caption         =   "Nearest 'Second' Endpoint 1 Latitude"
       Height          =   300
-      Left            =   2325
+      Left            =   225
       TabIndex        =   17
       Top             =   5085
-      Width           =   1680
+      Width           =   3780
    End
    Begin VB.Label Label8 
       Alignment       =   1  'Right Justify
