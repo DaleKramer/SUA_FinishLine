@@ -179,6 +179,7 @@ Begin VB.Form FinishLine
       Width           =   3660
    End
    Begin VB.Label Label16 
+      Caption         =   $"FinishLine.frx":0000
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   9.75
@@ -193,7 +194,7 @@ Begin VB.Form FinishLine
       Left            =   540
       TabIndex        =   30
       Top             =   1260
-      Width           =   4695
+      Width           =   5535
    End
    Begin VB.Label Label15 
       Caption         =   "4. Finish Here >"
